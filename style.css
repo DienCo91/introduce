@@ -537,3 +537,70 @@ img{
  .bx-chevron-up{
     font-size: 80px;
  }
+ .update{
+    
+    width: 100%;
+    
+    
+    
+    
+    
+ }
+.update_text{
+    background-color: rgba(92, 219, 202, 0.596);
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.update_texted{
+    width: 216px;
+    text-align: center;
+    color: aliceblue;
+    /* padding: 4px 4px; */
+    position: relative;
+    font-size: 16px;
+   
+}
+.update_texted::before{
+    content:attr(data-text);
+    position: absolute;
+    
+    
+    color: rgb(246, 0, 213);
+    /* background-color: #cf23fa; */
+    width: 0;
+    height: 100%;
+    animation: nextted  5s  linear infinite;
+    border-right: 2px solid aliceblue;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    
+}
+@keyframes nextted{
+    0%{
+        opacity: 1;
+        width: 0;
+    }
+    25%{
+        opacity: 1;
+        width: 25%;
+    }
+    50%{
+        opacity: 1;
+        width: 50%;
+    }
+    75%{
+        opacity: 1;
+        width: 75%;
+    }
+    100%{
+        opacity: 0.6;
+        width: 91%;
+    }
+    
+
+}
+
+
