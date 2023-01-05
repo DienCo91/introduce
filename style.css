@@ -23,6 +23,43 @@ background: linear-gradient(-45deg, #cf23fa, #00B4DB); /* W3C, IE 10+/ Edge, Fir
     justify-content: center;
     margin-top: 50px;
 }
+.information{
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+.text_infor{
+    position: relative;
+    text-align: center;
+    width: 20%;
+    background-color: #cf23fa;
+    font-size: 25px;
+    font-size: 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 6px;
+    background-color: rgba(19, 19, 19, 0.63);
+}.text_infor::before{
+    content:" ";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color:rgba(19, 19, 19, 0.63);
+    border-radius: 4px;
+    transition: 0.25s linear;
+    z-index: -1;
+}
+.text_infor:hover::before{
+    width: 100%;
+}
 @keyframes change{
     0%{
         background-position: 0 50%;
@@ -30,7 +67,7 @@ background: linear-gradient(-45deg, #cf23fa, #00B4DB); /* W3C, IE 10+/ Edge, Fir
     5%{
         background-position: 100% 50%;
     }
-    100%%{
+    100%{
         background-position: 0 50%;
     }
     }
@@ -130,7 +167,8 @@ img{
     color: #00B4DB;
     margin: 10px 0;
 }
-.card_project{
+.card_
+{
     margin: 20px 0;
 }
 .card_project a{
