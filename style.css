@@ -281,7 +281,7 @@ img{
     padding: 0px 12px; 
 }
 .width{
-    min-width: 25%;
+    width: 50%;
     /* padding: 0 26px; */
     
 }
@@ -365,15 +365,20 @@ img{
     justify-content: center;
     flex-wrap:wrap;
 }
-.project_all{
+.bg_project{
     display: flex;
     justify-content: center;
+}
+.project_all{
+    display: inline-block;
+    text-align: center;
     margin: 30px 0px;
     background-color: rgba(19, 19, 19, 0.63);
-    width: 20%;
+    
     padding: 6px ;
     text-align: center;
-    margin-left: 40%;
+    position:absolute;
+    
     font-size: 25px;
     border-radius: 4px;
     cursor: pointer;
