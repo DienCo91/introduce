@@ -36,13 +36,15 @@ background: linear-gradient(-45deg, #cf23fa, #00B4DB); /* W3C, IE 10+/ Edge, Fir
 .text_infor{
     position: relative;
     text-align: center;
-    width: 20%;
+    display: inline-block;
     background-color: #cf23fa;
     font-size: 25px;
     font-size: 25px;
     border-radius: 4px;
     cursor: pointer;
     padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
     background-color: rgba(19, 19, 19, 0.63);
 }.text_infor::before{
     content:" ";
@@ -603,4 +605,6 @@ img{
 
 }
 
-
+.none{
+    display: none;
+}
