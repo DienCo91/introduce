@@ -9,7 +9,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    height: 100vh;
+    
     color: aliceblue;
     background: #00B4DB;  /* fallback for old browsers */
 background: -webkit-linear-gradient(-45deg, #cf23fa, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
@@ -86,34 +86,38 @@ background: linear-gradient(-45deg, #cf23fa, #00B4DB); /* W3C, IE 10+/ Edge, Fir
     
 }
 img{
+
     object-fit: cover;
     width: 100%;
     height: 100%;
     object-position: center;
+   
 }
 .card_img{
-  
+    
     margin: 25px auto;
     width: 120px;
     height: 120px;
-    border: 4px solid #00B4DB;
+    border: 3px solid #00B4DB;
     border-radius: 50%;
     overflow: hidden;
-    transition: height 0.5s linear ;
-    
+    transition: all 0.5s linear ;
+   
     
     
 }
 .card_img:hover{
+    margin: 0px auto;
     width: 100%;
     height: 100%;
     border-radius:unset;
     overflow: unset;
-    margin: unset;
+   
     border: unset;
-    
+    transition: all 0.5s linear ;
 
 }
+
 .card_name{
     padding: 6px;
     width: 80%;
@@ -234,14 +238,14 @@ img{
     opacity: 0;
     transition: 0.1s linear;
     padding: 0px 5px;
-  
+    pointer-events: none;
     
    
 }
 .effect_text{
     cursor: pointer;
     color:rgba(34, 34, 34, 0.884) ;
-    transition: all 0.3s linear;
+    transition: all 0.15s linear;
 }
 .effect_text:hover{
     color:rgba(255, 253, 253, 0.863); ;
@@ -279,6 +283,7 @@ img{
     border-bottom: 0px;
     border-top: 0px; */
     padding: 0px 12px; 
+    /* pointer-events: none; */
 }
 .width{
     width: 50%;
@@ -290,21 +295,25 @@ img{
     margin-top: 20px;
     opacity: 1;
     transition: 0.5s linear;
+    pointer-events: auto;
 }
 .body_header_title-result:hover .body_header_title-content-result{
     margin-top: 20px;
     opacity: 1;
     transition: 0.5s linear;
+    pointer-events: auto;
 }
 .body_header_title-purpose:hover .body_header_title-content-purpose{
     margin-top: 20px;
     opacity: 1;
     transition: 0.5s linear;
+    pointer-events: auto;
 }
 .body_header_title-favorite:hover .body_header_title-content-favorite{
     margin-top:20px;
     opacity: 1;
     transition: 0.5s linear;
+    pointer-events: auto;
 }
 .body_header_text{
     padding: 10px 0;
@@ -420,24 +429,7 @@ img{
     border-radius: 6px;
   
 }
-/* .project_list-title{
-    position: relative;
-} */
-/* .project_list-title::before{
-    content: " ";
-    position: absolute;
-    width: 100%;
-    height: 0%;
-    left: 0;
-    top: 0;
-    background-color: rgba(19, 19, 19, 0.63);
-    z-index: 1;
-    border-radius: 6px;
-    transition: all 0.25s linear;
-} */
-/* .project_list-title:hover::before{
-    height: 49.6%;
-} */
+
 .project_list-title-link1{
     height: 300.5px;
     background-color: rgba(19, 19, 19, 0.63);
@@ -467,13 +459,14 @@ img{
    opacity: 1;
 }
 .footer{
-
-    background-color: rgba(92, 219, 202, 0.596);
+    transition: all 0.2s linear;
+   
     display: flex;
     justify-content: center;
-    height: 100%;
+    
     margin: 0;
-   
+   position: relative;
+   z-index: 10;
    
 }
 .footer-header{
@@ -486,23 +479,27 @@ img{
     flex-direction: column;
     width: 300px;
     height: 400px;
+    transition: all 0.25s linear;
 }
-
+.footer-header_logo-top{
+    position: relative;
+}
 .footer-header_logo-text{
     opacity: 0; 
     color: aliceblue;
     line-height: 20px;
     transition: opacity linear 0.4s;
     position: absolute;
-    /* background-color: #ee4d2d; */
+    
     font-size: 16px;
-    /* bottom: -4px; */
+   
     transform: translateX(100px);
     transition: all 0.25s linear;
 }
 
 .turn-up:hover .footer-header_logo-text{
      opacity: 1;
+     transition: all linear 0.4s;
      
 }
 .footer-header-author{
@@ -535,18 +532,19 @@ img{
     /* background-color: #ccc; */
     display: block;
     transform: translateY(5px);
-    transition: transform linear 0.2s;
+    transition: all 0.25s linear ;
 }
 .turn-up_icont:hover{
     color: var(--orage-color);
     transform: translateY(-20px);
-    padding-bottom: 20px;
+    
+    transition: all 0.25s linear ;
 }
  .bx-chevron-up{
     font-size: 80px;
  }
  .update{
-    
+   
     width: 100%;
     
     
@@ -555,7 +553,7 @@ img{
     
  }
 .update_text{
-    background-color: rgba(92, 219, 202, 0.596);
+  
     padding-bottom: 20px;
     width: 100%;
     display: flex;
