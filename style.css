@@ -184,8 +184,18 @@ img{
 }
 .card_project-info i{
     color: aliceblue;
-    font-size: 20px;
+    font-size: 26px;
     transition: 0.1s linear;
+}
+.card_project-info-zalo{
+    height: 24px;
+    width: 24px;
+    opacity: 0.8;
+    transition: all .1s ease;
+}
+.card_project-info-zalo:hover{
+    opacity: 1;
+    transition: all .1s ease;
 }
 .card_project-info i:hover{
     color: #00B4DB;
@@ -291,6 +301,7 @@ img{
     /* padding: 0 26px; */
     
 }
+
 .body_header_title-self:hover .body_header_title-content-self{
     margin-top: 20px;
     opacity: 1;
